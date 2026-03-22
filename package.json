@@ -1,0 +1,23 @@
+{
+  "name": "bootstack",
+  "version": "1.0.0",
+  "description": "Minimal interactive CLI to scaffold a React + Vite app",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "bootstack": "index.js"
+  },
+  "files": [
+    "index.js",
+    "src/"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js && node --check src/templates/reactVite.js && node --check src/utils/runCommand.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "inquirer": "^9.3.7",
+    "nanospinner": "^1.2.2"
+  }
+}
